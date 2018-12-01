@@ -1,0 +1,40 @@
+{
+  "name": "@teach-o-mat/splash",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "normalize.css": "^8.0.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2",
+    "react-scripts": "2.1.1"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^17.1.0",
+    "stylelint": "^9.8.0",
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:debug": "react-scripts --inspect-brk test --runInBand",
+    "eject": "react-scripts eject",
+    "lint:css": "stylelint --config=.stylelintrc '**/*.css'",
+    "lint:css:fix": "yarn lint:css --fix",
+    "lint:eslint:fix": "yarn lint:eslint --fix",
+    "lint:eslint": "eslint --ignore-path .gitignore",
+    "lint:fix": "yarn lint:eslint:fix .",
+    "lint": "yarn lint:eslint . && yarn lint:css"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

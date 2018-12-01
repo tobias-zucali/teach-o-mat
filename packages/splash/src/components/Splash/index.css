@@ -1,0 +1,62 @@
+.Splash {
+  align-items: center;
+  display: flex;
+  font-size: calc(2em + 4vw);
+  height: 100%;
+  transition: color 0.5s;
+}
+.Splash.Splash_highlight-red {
+  color: red;
+}
+.Splash.Splash_highlight-green {
+  color: #37ff37;
+}
+.Splash.Splash_highlight-yellow {
+  color: #ffe700;
+}
+
+.Splash-options {
+  height: 1.2em;
+}
+.Splash-options.Splash-options_center {
+  padding: 0 0.25em;
+}
+.Splash-options.Splash-options_pre,
+.Splash-options.Splash-options_post {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.Splash-options.Splash-options_pre {
+  text-align: right;
+}
+.Splash-options.Splash-options_post {
+  text-align: left;
+}
+
+.Splash-options-radio {
+  -webkit-appearance: none;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  margin: 0;
+  padding: 0;
+  height: 0;
+  transition: height 0.5s, transform 0.5s, text-decoration-color 0.5s;
+  transform: scaleY(0);
+  position: relative;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+.Splash-options-radio:checked {
+  height: 100%;
+  transform: scaleY(1);
+}
+.Splash-options-radio:focus {
+  outline:  none;
+  text-decoration-color: currentColor;
+}
+.Splash-options-radio::after {
+  content: attr(aria-label);
+}
